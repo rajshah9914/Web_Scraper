@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- your BASE URL here -->
+  <!-- <base href="http://localhost/xampphtdocsFiles/svnit_base/"> -->
+  <link rel="icon"  type="image/png" href="images/logo.png">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>SVNIT, Surat</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.googleapis.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/newsTick.css">
+  <style>
+    .mySlides {display:none;}
+  </style>
+  <script src="../js/use.fontawsome.js"></script>
+  <style type="text/css">
+
+    .crdtop{
+      height: 150px;
+      width:190px;
+        cursor: pointer;
+    }
+
+    .crdbottom{
+        height: 40px;
+        width:190px;
+    }
+
+    .dropdown-content {
+      overflow: visible !important;
+      min-width: 150px;
+    }
+
+    .dropdown-content .dropdown-content {
+      margin-top: 0;
+        margin-left: 100% !important;
+
+      
+    }
+
+    .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+      width: auto !important;
+      height: auto !important;
+      border-color: #474747;
+      background-color: #474747;
+      background-image: none;
+      filter: none;
+    }
+
+    .slider h3,.slider h5 {
+    /*text-rendering: optimizeLegibility;*/
+      transform: translate3d(0,0,0);
+    }
+
+    ul.sizing li{
+        min-height: 10px;
+    }
+    ul.sizing li a{
+      line-height: 10px;
+    }
+
+
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(images/Preloader_3.gif) center no-repeat #fff;
+    }
+    #ticker_container{ margin-top:6px; }
+    #newscontent { margin-right: 10px; float: left; }
+    #news { display: none; }
+    #controls { float: right; height: 5px; }
+    #news { display: none;}
+    .news_tricker{ width:80%; }
+    .mySlides { display:none; }
+    .bold { font-weight: bold; }
+    .right { float: right; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="se-pre-con"></div>
+  <div id="modalsearch" class="modal bottom-sheet">
+    <div class="modal-content">
+      <script>
+      (function() {
+        var cx = '000464212614805462193:1r7sx1al0gk';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      </script>
+      <gcse:search></gcse:search>
+    </div>
+    <div class="modal-footer">
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+  <ul id="in_report" class="dropdown-content black-text bold">
+    <li><a href="Data/about/ANNUALREPORT2014-15.pdf">Annual Report</a></li>
+    <li><a href="web/accountreport.php">Annual Account Report</a></li>
+    <li><a href="qlinks/acr_ug.pdf">Accrediation Report: UG</a></li>
+    <li><a href="qlinks/acr_pg.pdf">Accrediation Report: PG</a></li>
+  </ul>
+
+  <ul id="in_student_admission" class="dropdown-content black-text bold">
+    <li><a href="web/admission.php?tag=dasa">DASA</a></li>
+    <li><a href="web/admission.php?tag=ug">B.Tech. &nbsp; M.Sc.</a></li>
+    <li><a href="web/admission.php?tag=mtech">M.Tech.</a></li>
+    <li><a href="web/admission.php?tag=phd">Ph. D.</a></li>
+  </ul>
+
+    <ul id="in_fees" class="dropdown-content black-text bold">
+    <li><a href="https://mis.svnit.ac.in/mispay/" target="_blank">Payment & Registration</a></li>
+    <li><a href="Data/fees/OnlineFeePayment_RegistrationGuideline16-07-2016.pdf">Guidelines</a></li> 
+    <li><a href="https://www.onlinesbi.com/prelogin/icollecthome.htm">Hostel fee payment</a></li>
+    <li><a href="Data/fees/Fee_structure_2017-18.pdf">Hostel fee structure</a></li>
+  </ul>
+
+  <ul id="in_hostel" class="dropdown-content black-text bold">
+    <li><a href="web/hostel/swb.html">Swami Vivekanand Bhavan</a></li>
+    <li><a href="web/hostel/mtb.html">Mother Teresa Bhavan</a></li>
+    <li><a href="web/hostel/bbh.html">Bhabha Bhavan</a></li>
+    <li><a href="web/hostel/gajjar.html">Gajjar Bhavan</a></li>
+    <li><a href="web/hostel/sarabhai.html">Sarabhai Bhavan</a></li>
+    <li><a href="web/hostel/tagore.html">Tagore Bhavan</a></li>
+    <li><a href="web/hostel/nehru.html">Nehru Bhavan</a></li>
+    <li><a href="web/hostel/raman.html">Raman Bhavan</a></li>
+    <li><a href="web/hostel/narmad.html">Narmad Bhavan</a></li>
+  </ul>
+
+  <ul id="aboutus" class="dropdown-content black-text bold">
+   <li><a href="web/brief_writeup.php">Brief Write - Up</a></li>
+    <li><a href="web/director.php">Director's Message</a></li>
+    <li><a href="web/puc.php">Board of Governors</a></li>
+    <li><a href="http://www.nitcouncil.org.in" target="_blank">Council of NITs</a></li>
+    <li><a href="web/contactus.php">Contact Us</a></li>
+    <li><a href="web/documentary.php">Documentary Film</a><hr/></li>  
+    <li><a href="web/research.php">Research</a></li>
+    <li><a href="web/mou.php">MoU</a><hr/></li>
+    <li><a href="web/nirf.php">NIRF 2017</a></li>
+    <li><a href="web/nirf/2018/Final_Submitted_NIRF_Report_2018.pdf">NIRF 2018</a></li>
+    <li><a href="web/nirf/2019/FinalSubmittedDataNIRF 2019-07-Dec-2018.pdf">NIRF 2019</a></li>
+    <li><a href="#" class="dropdown-button" data-activates="in_report">Reports<i class="material-icons right">arrow_drop_down</i></a><hr/></li>
+    <li><a href="web/puc.php">Press Release</a></li>
+  </ul>
+
+  <ul id="student" class="dropdown-content black-text bold">
+    <li><a href="" class="dropdown-button" data-activates="in_student_admission">Admission<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="" class="dropdown-button" data-activates="in_fees" >Online Fees<i class="material-icons right">arrow_drop_down</i></a><hr/></li>
+   <!--  <li><a href="qlinks/AcademicCalendarfortheAcademicYear2017-18.pdf">Academic Calender 2017-18</a></li>  -->
+   <li><a href="qlinks/Academic Calendar2018-19.pdf">Academic Calender 2018-19</a></li> 
+    <li><a href="qlinks/holidaylist_2018.pdf">List of Holidays</a><hr/></li>
+    <li><a href="web/antiragging.php">Anti-Ragging</a></li> 
+    <li><a href="Data/Notice/2018/policy_prevention_plagirism.pdf">Institute Policy for Prevention of Plagiarism</a></li> 
+  </ul>
+
+  <ul id="department" class="dropdown-content bold">
+    <li><a href="web/department/applied_chemistry/applied_chemistry_dept.php">Applied Chemistry</a></li>
+    <li><a href="web/department/applied_math/applied_math_dept.php">Applied Math. & Human.</a></li>
+    <li><a href="web/department/applied_mechanics/applied_mechanics_dept.php">Applied Mechanics</a></li>
+    <li><a href="web/department/applied_physics/applied_physics_dept.php">Applied Physics</a></li>
+    <li><a href="web/department/chemical/chemical_dept.php">Chemical Engineering</a></li>
+    <li><a href="web/department/civil/civil_dept.php">Civil Engineering</a></li>
+    <li><a href="web/department/computer/computer_dept.php">Computer Engineering</a></li>
+    <li><a href="web/department/electrical/electrical_dept.php">Electrical Engineering</a></li>
+    <li><a href="web/department/electronics/electronics_dept.php">Electronics Engineering</a></li>
+    <li><a href="web/department/mechanical/mechanical_dept.php">Mechanical Engineering</a></li>
+  </ul>
+
+  <ul id="centralfacility" class="dropdown-content bold">
+    <li><a href="web/ccc.php">CCC</a></li>
+    <li><a href=" http://172.21.64.12/SVNIT/default.aspx" target="_blank" >MIS</a></li>
+   <!--  <li><a href="http://172.21.64.12/SVNIT/default.aspx" target="_blank" >MIS</a></li> -->
+    <li><a href="http://172.16.1.10/moodle/" target="_blank">Moodle</a></li>
+    <li><a href="web/department/library/library.php" target="_blank">Central-Library</a></li>
+    <li><a href="web/nptel.php" target="_blank">NPTEL</a></li>
+    <li><a href="#modal3" target="_blank">TEQIP</a></li>
+    <li><a href="http://www.svnit.ac.in/web/qip.php" target="_blank">QIP Centre</a>
+    <li><a href="http://www.svnit.ac.in/anchor/anchor.html" target="_blank">Anchor Cell</a></li>
+    <li><a href="web/cce.php">CCE</a><hr/></li>
+    <li><a href="web/physical.php">Physical Education</a></li>
+    <li><a href="web/campus.php?tag=canteen">Canteen</a></li>
+    <li><a href="web/dcc.php?tag=about">Day Care Centre</a></li>
+    <li><a href="" class="dropdown-button" data-activates="in_hostel">Hostels<i class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="web/campus.php?tag=guesthouse">Guest House</a></li>
+    <li><a href="web/campus.php?tag=hcc">Health Center</a></li>
+    <li><a href="web/campus1.php?tag=security">Security</a></li>
+    <li><a href="web/campus1.php?tag=banks">Bank</a></li>
+    <li><a href="web/campus1.php?tag=postoffice">Post Office</a></li>
+  </ul>
+
+  <ul id="career" class="dropdown-content bold">
+    <li><a href="web/placement.php">Training & Placement</a></li>
+    <li><a href="web/jobs.php">Jobs @ SVNIT<img src="images/new.gif" width="27px" /></a></li>
+  </ul>
+
+  <ul id="quicklinks" class="sizing dropdown-content bold" style="overflow-y: auto;">
+    <li><a href="web/nmeict.php">NME-ICT</a></li>
+    <li><a href="web/nad.php">NAD</a></li>
+    <li><a href="Data/phonebook.pdf" target="_blank">Phonebook</a></li>
+    <li><a href="qlinks/OFFICE_ORDER-TIMING2014.pdf">Institute Timings</a></li>
+    <li><a href="qlinks/GST No. SVNIT.jpeg">GST Information</a><hr/></li>
+    <li><a href="web/womencell.php">Women Cell</a></li>
+    <li><a href="qlinks/AlignmentofServiceRules.pdf">Sexual Harassment Act</a></li>
+    <li><a href="web/icc.php">ICC</a><hr/></li>
+    <li><a href="qlinks/eresources.html">INDEST resource</a></li>
+    <li><a href="web/expert_talks.php">Expert Talks</a></li>
+    <li><a href="qlinks/CPDA_2014.pdf">CPDA by seeking information</a></li>
+    <li><a href="web/download.php">Download Forms and Informations</a></li>
+    <li><a href="web/download_apprasal.php">Evaluation Form / Faculty self appraisal form</a></li>
+    <li><a href="qlinks/housekeeping.pdf">Housekeeping & Sanitation</a></li>
+    <li><a href="web/gallery.php">Photogallery</a></li>
+    <li><a href="images/map.jpg" target="_blank">Campus Map</a></li>
+  </ul>
+
+
+  <ul id="slide-out" class="side-nav bold">
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">About Us<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="web/brief_writeup.php">Brief Write - Up</a></li>
+              <li><a href="web/director.php">Director's Message</a></li>
+              <li><a href="web/puc.php">Board of Governors</a></li>
+              <li><a href="http://www.nitcouncil.org.in" target="_blank">Council of NITs</a></li>
+              <li><a href="web/contactus.php">Contact Us</a></li>
+              <li><a href="web/documentary.php">Documentary Film</a><hr/></li>  
+              <li><a href="web/research.php">Research</a></li>
+              <li><a href="web/mou.php">MoU</a><hr/></li>
+              <li><a href="web/nirf.php">NIRF 2017</a></li>
+              <li><a href="web/nirf/2018/Final_Submitted_NIRF_Report_2018.pdf">NIRF 2018</a></li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Report<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="Data/about/ANNUALREPORT2014-15.pdf">Annual Report</a></li>
+                        <li><a href="web/accountreport.php">Annual Account Report</a></li>
+                        <li><a href="qlinks/acr_ug.pdf">Accrediation Report: UG</a></li>
+                        <li><a href="qlinks/acr_pg.pdf">Accrediation Report: PG</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="web/puc.php">Press Release</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion bold">
+        <li><a class="collapsible-header">Student<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Admission<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="web/admission.php?tag=dasa">DASA</a></li>
+                        <li><a href="web/admission.php?tag=ug">B.Tech. &nbsp; M.Sc.</a></li>
+                        <li><a href="web/admission.php?tag=mtech">M.Tech.</a></li>
+                        <li><a href="web/admission.php?tag=phd">Ph. D.</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Online Fees<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="https://mis.svnit.ac.in/mispay/" target="_blank">Payment & Registration</a></li>
+                        <li><a href="Data/fees/OnlineFeePayment_RegistrationGuideline16-07-2016.pdf" target="_blank">Guidelines</a></li > 
+                        <li><a href="https://www.onlinesbi.com/prelogin/icollecthome.htm" target="_blank">Hostel fee payment</a></li>
+                        <li><a href="Data/fees/Fee_structure_2017-18.pdf" target="_blank">Hostel fee structure</a></li>
+                      </ul>
+                    </div><hr/>
+                  </li>
+                </ul>
+              </li>
+              <li class="no-padding"><a href="qlinks/AcademicCalendarfortheAcademicYear2017-18.pdf">Acedemic Calender 2017-18</a></li> 
+              
+              <li><a href="qlinks/holidaylist_2018.pdf">List of Holidays</a><hr/></li>           
+              <li class="no-padding"><a href="web/antiragging.php" target="_blank">Anti-Ragging</a></li>
+              <li><a href="Data/Notice/2018/policy_prevention_plagirism.pdf">Policy for Prevention of Plagiarism</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Department<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="web/department/applied_chemistry/applied_chemistry_dept.php">Applied Chemistry</a></li>
+              <li><a href="web/department/applied_math/applied_math_dept.php">Applied Math. & Human.</a></li>
+              <li><a href="web/department/applied_mechanics/applied_mechanics_dept.php">Applied Mechanics</a></li>
+              <li><a href="web/department/applied_physics/applied_physics_dept.php">Applied Physics</a></li>
+              <li><a href="web/department/chemical/chemical_dept.php">Chemical Engineering</a></li>
+              <li><a href="web/department/civil/civil_dept.php">Civil Engineering</a></li>
+              <li><a href="web/department/computer/computer_dept.php">Computer Engineering</a></li>
+              <li><a href="web/department/electrical/electrical_dept.php">Electrical Engineering</a></li>
+              <li><a href="web/department/electronics/electronics_dept.php">Electronics Engineering</a></li>
+              <li><a href="web/department/mechanical/mechanical_dept.php">Mechanical Engineering</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Central Facility<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="web/ccc.php">CCC</a></li>
+              <li><a href="http://172.21.64.12/SVNIT/default.aspx" target="_blank">MIS</a></li>
+              <li><a href="http://172.16.1.10/moodle/" target="_blank">Moodle</a></li>
+              <li><a href="web/department/library/library.php" target="_blank">Central-Library</a></li>
+              <li><a href="web/nptel.php" target="_blank">NPTEL</a></li>
+              <li><a href="#modal3" target="_blank">TEQIP</a></li>
+              <li><a href="http://www.svnit.ac.in/web/qip.php" target="_blank">QIP Center</a></li>
+              <li><a href="http://www.svnit.ac.in/anchor/anchor.html" target="_blank">Anchor Cell</a></li>
+              <li><a href="web/cce.php">CCE</a><hr/></li>
+              <li><a href="web/physical.php">Physical Education</a></li>
+              <li><a href="web/campus.php?tag=canteen">Canteen</a></li>
+              <li><a href="web/dcc.php?tag=about">Day Care Centre</a></li>
+              <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                  <li><a class="collapsible-header">Hostels<i class="material-icons right">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                      <ul>
+                        <li><a href="web/hostel/swb.html">Swami Vivekanand Bhavan</a></li>
+                        <li><a href="web/hostel/mtb.html">Mother Teresa Bhavan</a></li>
+                        <li><a href="web/hostel/bbh.html">Bhabha Bhavan</a></li>
+                        <li><a href="web/hostel/gajjar.html">Gajjar Bhavan</a></li>
+                        <li><a href="web/hostel/sarabhai.html">Sarabhai Bhavan</a></li>
+                        <li><a href="web/hostel/tagore.html">Tagore Bhavan</a></li>
+                        <li><a href="web/hostel/nehru.html">Nehru Bhavan</a></li>
+                        <li><a href="web/hostel/raman.html">Raman Bhavan</a></li>
+                        <li><a href="web/hostel/narmad.html">Narmad Bhavan</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </li>            
+              <li><a href="web/campus.php?tag=guesthouse">Guest House</a></li>
+              <li><a href="web/campus.php?tag=hcc">Health Center</a></li>
+              <li><a href="web/campus1.php?tag=security">Security</a></li>
+              <li><a href="web/campus1.php?tag=banks">Bank</a></li>
+              <li><a href="web/campus1.php?tag=postoffice">Post Office</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Career<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>  
+              <li><a href="web/placement.php">Training & Placement</a></li>
+              <li><a href="web/jobs.php">Jobs @ SVNIT<img src="images/new.gif" width="27px" /></a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <a class="collapsible-header">Quick Links<i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul class="small-nav">
+              <li><a href="Data/phonebook.pdf" target="_blank">Phonebook</a></li>
+              <li><a href="qlinks/OFFICE_ORDER-TIMING2014.pdf">Institute Timings</a></li>
+              <li><a href="qlinks/GST No. SVNIT.jpeg">GST Information</a><hr/></li>
+              <li><a href="web/womencell.php">Women Cell</a></li>
+              <li><a href="qlinks/AlignmentofServiceRules.pdf">Sexual Harassment Act</a></li>
+              <li><a href="qlinks/OfficeOrderreconstitutionofICCofSVNIT2016.pdf">ICC</a><hr/></li> 
+              <li><a href="qlinks/eresources.html">INDEST resource</a></li>
+              <li><a href="web/expert_talks.php">Expert Talks</a></li>
+              <li><a href="qlinks/CPDA_2014.pdf">CPDA by seeking information</a></li>
+              <li><a href="web/download.php">Download Forms and Informations</a></li>
+              <li><a href="web/download_apprasal.php">Evaluation Form / Faculty self appraisal form</a></li>
+              <li><a href="qlinks/housekeeping.pdf">Housekeeping & Sanitation</a></li>
+              <li><a href="web/gallery.php">Photogallery</a></li>
+              <li><a href="images/map.jpg" target="_blank">Campus Map</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <div class="navbar-fixed" style="z-index:9;height: 30px;">
+    <nav style="background-color: rgb(56,75,123); line-height: 0px;">
+      <div class="nav-wrapper " style=" padding-left: 5%; padding-right: 5%;">
+        <div id="google_translate_element" class="right" style="padding-top: 0.15%"></div>
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+          }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <a href="http://mail.svnit.ac.in" target="_blank" class="right button tooltipped" data-position="base" data-delay="0" data-tooltip="Webmail" style="padding:0px 2%;color: #fff"><i class="material-icons" style="line-height: 30px;height: 1%;">mail_outline</i></a>  
+        <a href="#modalsearch" class="right button tooltipped" data-position="base" data-delay="0" data-tooltip="Search" style="padding:0px 2%;color: #fff"><i class="material-icons" style="line-height: 30px;height: 1%">search</i>&nbsp</a>    
+      </div>
+    </nav>
+  </div>
+
+  <div class="navbar-fixed">
+    <nav class="white">
+      <div class="nav-wrapper black-text" style="padding-left:1%;padding-right:1%">
+        <a href="index.php" class="brand-logo" style="padding-top:5px;"><img style="padding-top:2px" width="100" height="50" class="responsive-img" src="images/svnit1.png" alt="svnit"/></a>
+          <ul class="right hide-on-med-and-down bold">
+            <li><a class="dropdown-button" href="" data-activates="aboutus" data-beloworigin="true">About Us<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="student" data-beloworigin="true">Student<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="department" data-beloworigin="true">Department<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="centralfacility" data-beloworigin="true">Central Facility<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="career" data-beloworigin="true">Career<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="" data-activates="quicklinks" data-beloworigin="true">Quick Links<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="images/sardar.jpg" alt="slider"> 
+            <div class="caption center-align">
+              <h5>Sardar Vallabhbhai National Institute of Technology</h5>
+              <h6 class="light grey-text text-lighten-3"><b>Institute of National Importance<br/>since 1961</b></h6>
+            </div>
+          </li>
+          <li>
+            <img src="images/gate.jpg" alt="slider"> 
+          </li>
+          <li>
+            <img src="images/IMG_2146.JPG" alt="slider"> 
+            
+          </li>
+          <li>
+            <img src="images/crc.jpg" alt="slider"> 
+            
+          </li>
+          
+          <li>
+            <img src="images/admin.jpg" alt="slider">
+          </li>
+           <li>
+            <img src="images/MTB.JPG" alt="slider"> 
+            
+          </li>
+          <li>
+            <img src="images/DSC_1256.JPG" alt="slider"> 
+            
+          </li>
+          <li>
+            <img src="images/DSC_1265.JPG" alt="slider"> 
+            
+          </li>
+          <li>
+            <img src="images/DSC_1287.JPG" alt="slider"> 
+            
+          </li>
+          <li>
+            <img src="images/DSC_2174.JPG" alt="slider"> 
+            
+          </li>
+          <li>
+            <img src="images/DSC_2179.JPG" alt="slider"> 
+            
+          </li>
+            <div class="caption center-align">
+              <h5>Sardar Vallabhbhai National Institute of Technology</h5>
+              <h6 class="light grey-text text-lighten-3"><b>Institute of National Importance<br/>Since 1961</b></h6>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+     
+    <div class="col">
+      <div class="card-panel blue-grey darken-4">
+        <span class="white-text"><B> Our Mission</B></span>
+      </div>
+      <h6>"To be a globally accepted centre of excellence in technical education catalyzing absorption, innovation, diffusion and transfer of high technologies resulting in enhanced quality for all the stake holders"</h6>
+      <div class="card-panel blue-grey darken-4">
+        <span class="white-text"><B> Our Vision</B></span>
+      </div>
+      <h6>"To be one of the leading Technical Institutes disseminating globally acceptable education, effective industrial training and relevant research output"</h6>
+      <div class="card-panel blue-grey darken-4">
+        <span class="white-text"><B style="color: white">Achievements</B></span><a href="web/achievements.php" class="right white-text">read more...</a>
+      </div>
+
+
+      <h6 style="text-align: justify;">
+      Congratulations to Prof. S. A. Channiwala, Prof., MED for the conferment
+of the prestigious award of Bhatnagar Fellowship for the year 2018 by
+Council of Scientific & Industrial Research (CSIR) which is awarded to an
+individual scientist in recognition of outstanding work.	
+      </h6>
+       
+
+      <hr>
+      <div class="row" style="margin-bottom: auto;line-height: 1;">
+         
+         <!-- <h6><b><font color="red"">Physical Reporting : <a href="Data/Notice/2018/CSABSpecialRound.pdf"> CSAB Special Round </a> || <a href="Data/Notice/2018/ReportingDocumentsDASA2018-19.pdf"> DASA 2018 </a></font></b><img src="images/new.gif" width="27px" /></h6> -->
+
+         
+       <!--    <h6><b><font color="red""><a href="Data/Notice/2018/ReportingDocumentsDASA2018-19.pdf"> B. Tech. (DASA) : Reporting Dates and Documents </a></font></b><img src="images/new.gif" width="27px" /></h6>
+        -->  
+          <!--  <h6><b><font color="red""><a href="http://www.svnit.ac.in/web/admission.php?tag=ug"> B. Tech. and M. Sc. Admission Information: ugadmission@svnit.ac.in; +91-261-2201843; 9714827744</a></font></b></h6> -->
+        
+<!--    <h6><b><a href="https://mis.svnit.ac.in/mispay/"> Online Fees Payment is started if Any query related to fees payment contact MIS Section on this number: 0261 -2201775</a></b><img src="images/new.gif" width="27px" /></h6> --> 
+<h6><b> RESULT OF REGULAR EXAM HELD DURING NOV / DEC 2018.&nbsp; <a href="http://www.svnit.ac.in/result/result_dec2018/btech_dec2018.php" target="_blank"><font color="red">B. Tech</font> || <a href="http://www.svnit.ac.in/result/result_dec2018/msc_may2017.php" target="_blank"><font color="red">M.Sc.</font> || <a href="http://www.svnit.ac.in/result/result_dec2018/mtech_dec2018.php"><font color="red"> M.Tech </font><img src="../images/new.gif" width="27px" /></b></a></h6>
+
+    	   <h6><b> <a href="Data/VerificationTranscriptandScholarshiprelatedinquiry.pdf" target="_blank"> Verification Transcript and Scholarship related inquiry </b></a></h6>
+    	   
+     
+
+<!-- <a href="http://www.svnit.ac.in/16th_Convocation2018/index.htm" target="_blank"><font color="red"">16th Convocation Ceremony photos</font></a><br/> 
+<a href="http://estv.in/svnit/" target="_blank"><font color="red"">16th Convocation 2018.VIDEO </font></a><br/>
+<a href="http://www.svnit.ac.in/16thconvocation2018/Degree_Recipients_16th_convocation_2018_ceremony_of_SVNIT/sf2_thumbs0.htm" target="_blank"><font color="red"">Degree Recipients Photos 16th Convocation 2018. </font></a><br/> -->
+<h6><b><a href="../Data/admission/2018-19/Ph. D./INSTRUCTION_TO_NEWLY_ADMITTED_PHD_AND_MTECH.pdf"><font color="red">Important Instructions to Newly Admitted Ph.D. and M. Tech (Research Students).</font></a> <img src="../images/new.gif" width="27px" /></b></h6>
+<h6><b><a href="/web/selected_candidate.php"><font color="red"">List of Selected Candidates for Ph D Admission in Spring Semester 2018 - 2019</font></a> <img src="../images/new.gif" width="27px" /></b></h6>
+<!--	<h6><b><font color="red"">Sixteenth Convocation of Sardar Vallabhbhai National Institute of
+Technology Surat will be held on 13th October 2018.<br/> List of Degree Recipients <a href="Data/Degree_Awardee_of_16th_Convocation.pdf"> View PDF </a> <br/> 
+<a href="Data/Medalist 2017-2018.pdf" target="_blank"><font color="red"">Gold | Silver Medalist</font></a><br/>
+<a href="Data/Schedule 16th Convocation.pdf" target="_blank"><font color="red"">Schedule of Events</font></a><img src="images/new.gif" width="27px" /><br/>
+<a href="Data/Invitation_16th_Convocation_2018_SVNIT_Surat.pdf" target="_blank"><font color="red"">Program Schedule and Route Map</font></a><br/>
+Important Information for Degree Recipients <a href="Data/16thConvocation05092018233127.pdf" target="_blank"> View PDF</a>  &nbsp; | <a href="Data/16thConvocation05092018233110.pdf" target="_blank"> View PDF</a><br/> Important Instructions for Degree Awardees <a href="Data/16h Convocation-important_instructions.pdf" target="_blank"> View PDF</a><br/>
+ Venue: Veer Narmad South Gujarat University Convention Hall</font></b></h6> -->
+         
+      </div>
+
+    </div>       
+  </div>
+  <marquee behavior="alternate">
+    <h5><center><b><a href="http://svnit.ac.in/iiitsurat/index.php" target="_blank">Indian Institute of Information Technology, Surat. </a></b></center></h5>
+  </marquee> 
+  <div>
+    <div class="row boards">
+      <div class="col l4 m4 s12 center-align">
+        <div class="card-panel blue-grey darken-4">
+          <span><b><a href="web/notice_events_tenders.php?tag=notice" class="white-text">Student Notice</a></b></span>
+        </div>
+        <div id="nt-1-container" class="nt-container">
+        	<marquee direction="up" id="marquee" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="71" align="left" height="100" >
+           <div class="container" style="width: 94%";>
+ <div class="row center">
+	<table class = "bordered striped">
+
+	<tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/GLOBAL ELECTIVE FOR 6TH SEMESTER BTECH.pdf">Tentative Global Elective List of Subjects</a>
+            </td>
+    </tr>
+
+   <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/First year time tables for Even  Semester for Division A to J.pdf">Revised First year Time table for Spring Semester</a>
+            </td>
+    </tr>
+
+    <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;">RESULT OF REGULAR EXAM HELD DURING NOV / DEC 2018. <a href="http://www.svnit.ac.in/result/result_dec2018/btech_dec2018.php"><font color="red">B. Tech </font></a> || <a href="http://www.svnit.ac.in/result/result_dec2018/msc_may2017.php"><font color="red">M.Sc.</font></a></td>
+    </tr>
+
+		 <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"> Fee Remission B.Tech I 2018-19&nbsp;&nbsp;<a href="../Data/Notice/2019/Pending Notice II.pdf"><font color="red">Pending documents - II</font></a> || <a href="../Data/Notice/2019/Not Eligible II.pdf"><font color="red">Not Eligible - II</font></a></td>
+          </tr>
+
+		 <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Notice-13122018234805.pdf">Pre - Registration for Spring Sememster Extended Till 22nd December 2018.</a></td>
+          </tr>
+
+     <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/end_sem.php">End Semester Exam Schedule (November 2018)  </a></td>
+          </tr>
+		 <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/makeup_mid_sem.php">Make - Up Test for MID Semester (November 2018) Exam </a></td>
+          </tr>
+     <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="https://mis.svnit.ac.in/SVPHD/default.aspx">Online application for PhD admission in spring semester starting from December-January: Last Date for Application: 30th November 2018.</a></td>
+          </tr>
+		 <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;">B.Tech.-I (2018-19) Fee Remission &nbsp;&nbsp; <a href="../Data/Notice/2018/Fee Remission Notice.pdf"><font color="red">Notice </font></a> || <a href="../Data/Notice/2018/Fee Remission Form.pdf"><font color="red"> Form </font></a></td>
+          </tr>
+    <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Poster.png">Expert Talk on Deterministic ODE Models in Population Ecology By - Prof. Bindhyachal Rai</a></td>
+          </tr>
+ <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Venue_2018.pdf">Venue for Election of Speaker 2018</a></td>
+          </tr>
+
+    
+
+ 	<tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/DAA 2018-19 Notice.pdf">Notice for Distinguished Alumnus Award 2018-19</a></td>
+          </tr>
+
+    
+
+    <tr>
+    	<td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Eligible candidates for speaker2018.pdf">List of Eligible Candidates for the Post of Speaker 2018 </a> </td>
+          </tr>
+
+   <!--  <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/mid_sem.php">Mid Semester Exam Schedule  </a></td>
+          </tr> -->
+
+    <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Notice of Speaker 2018.pdf"> Notice for Election of Speaker of SAC 2018</a></td>
+     </tr>
+		<tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Upload_FINAL_RESULT.pdf"> Result of Student Council & Hostel Council Election 2018-19 </a></td>
+     </tr>
+
+    <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/RevisedFinal_List_13_09_2018.pdf"> Final Election Nomination List 2018 </a></td>
+     </tr>
+         
+
+
+    
+         
+	<tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Student Election_NominationList_07_09_2018.pdf">Election Nomination List 2018</a>
+            </td>
+          </tr>
+
+
+	 <tr>            
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Re-activation_of_the_National_Scholarship_Portal_2018-19.pdf">Re-Activation of National Scholarship Portal (NSP 2.0) from 1.7.18 - Application for Scholarship(Top Class Edu) for ST Students.
+            </a></td>
+          </tr>
+
+          <tr>
+            <td class="tablefont" style="text-align:left;width :80%;"><a href="https://mis.svnit.ac.in/mispay/"> Online Fees Payment is started if Any query related to fees payment contact MIS Section on this number: 0261 -2201775</a></td>
+         
+         </tr>
+          <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/TentativeGLOBALELECTIVEALLOTMENTREPORT.pdf">New Revised List of Global Elective For Fifth Semester</a></td>
+           
+          </tr>
+         
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/PhysicalReportingJoSAA2018.pdf">Reporting Dates and Documents for JOSAA Students</a></td>
+            
+          </tr>
+
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/ReportingDocumentsDASA2018-19.pdf">Reporting Dates and Documents for DASA Students</a></td>
+                    </tr>
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"> <a href="../Data/Notice/2018/NoticeforFeeRemission.pdf">Notice for Fee Remission of B.Tech.-II</a></td>
+            
+          </tr>
+          
+
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Notice-M.Tech-Iyearstudent.pdf">Notice for M. Tech. Ist Year Student(Hostel Admission)</a></td>
+            
+          </tr>
+          
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Pending_Notice.pdf">Urgent Documents Required for B.Tech II Year Fee Remission (Students admitted in Year 2017-2018)</a></td>
+            
+          </tr>
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/FinalChoiceofHostelRoomAllotmentSchedule2018-19.pdf"> Final Choice of Hostel Room Allotment Schedule 2018-19 </a></td>
+           
+          </tr>
+
+           <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"> <a href="../Data/Notice/2018/Academic Calendar2018-19.pdf">   Academic Calender 2018-19</a> </td>
+           
+          </tr>
+
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Hostel Fee Structure 2018-19.pdf">   Hostel Fee Structure 2018-19</a> </td>
+            
+          </tr>
+
+           <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"> <a href="../Data/Notice/2018/Online_Hostel_room_allotment_schedule_(Trial-Demo round).pdf"> Hostel Trial/Demo round schedule </a></td>
+            
+          </tr>
+           
+             <tr>
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/CSIS-2009.pdf">Central sector Interest Subsidy Scheme (CSIS), 2009 - Reg.
+</a></td>
+            
+                        </tr>      
+
+
+     <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="http://www.svnit.ac.in/web/admission.php?tag=phd">The last date of submission of application form for Autumn Semester is 30th June 2018</a></td>
+      </tr>
+       <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../web/May2018result.php">End Semesters Exam Results May-2018</a></td>
+            
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Anual_Sports_Report_2017-18.pdf">Physical Education Annual Report</a></td>
+            
+          </tr>
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/ONLINE HOSTEL ROOM ALLOTMENT SYSTEM (2018-19).pdf">Hostel Room Allotment System(2018-19)</a> </td>
+            
+          </tr>
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/B.Tech.-III_Fee_Remmission_Notice.pdf">Fee Remission (B. Tech. - III) 2018-19</a></td>
+            
+          </tr>
+          <tr>            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/B.Tech.-II_Fee_Remmission_Notice.pdf">Fee Remission (B. Tech. - II) 2018-19</a></td>
+            
+          </tr>     
+          <tr>
+                            
+            <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/AcademicRegulations2013-2014.pdf">Academic Rules & Regulation w.e.f. (2013-2014)</a></td>
+            
+          </tr>
+           
+</table>
+</div>
+</div>
+        	</marquee>
+          <a href="web/notice_events_tenders.php?tag=notice" class="right">read more...</a>
+        </div>
+      </div>
+      <div class="col l4 m4 s12  center-align">
+        <div class="card-panel blue-grey darken-4">
+          <span><b><a href="web/notice_events_tenders.php?tag=eventsnseminar" class="white-text">Events & Seminars</a></b></span>
+        </div>
+        <div id="nt-2-container" class="nt-container">
+         <marquee direction="up" id="marquee" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="71" align="left" height="100" >
+           <div class="container" style="width:94%";>
+ <div class="row center">
+  <table class = "bordered striped">
+
+  	<tr>
+        <td><a href="https://icrtnce2019.wixsite.com/home">International Conference on Recent Trends In Nanomaterials For Clean Energy on 16 - 17 February 2019 at S. V. National Institute of Technology, Surat </a> </td>
+      </tr>
+
+  	<tr>
+        <td><a href="../Data/Notice/2018/UBA final broucher1_3.pdf">One Day Regional Workshop for Orientation of Participating Institutes to Initiate Work in Adopted Village Clusters on December 4, 2018</a> </td>
+      </tr>
+
+  	<tr>
+        <td><a href="../Data/Notice/2018/SSC_2018.pdf">National Conference on Smart and Sustainables Cities (SSC - 18) (22 - 23 December, 2018)</a> </td>
+      </tr>
+    <tr>
+        <td><a href="http://web-japps.ias.ac.in:8080/Refreshcourse/ZQMS.jsp">Refresher Course On "Elementary Quantum Mechanics and Spectroscopy" During 14-29 January 2019 at SVNIT, Surat </a> </td>
+      </tr>
+    <tr>
+        <td><a href="../Data/Notice/2018/BMS_SS_STTP_BTIEA-2018.pdf">One Week Short Term Training Programme (STTP) on Basics of Tribology and Its Industrial Engineering Applications (BTIEA - 2018) under TEQIP-III (22 to 26 Oct 2018)</a> &nbsp;&nbsp; <a href="../Data/Notice/2018/BTIEA_2018_List_of_Participants.pdf"><font color="red">List of Participants</font></a></td>
+      </tr>
+    <tr>
+        <td><a href="../Data/Notice/2018/Recent_Advances_in_Flood_Modelling.pdf">One Week Short Term Traning Program(STTP) on Recent Advances in Flood Modelling Under TEQIP-III(3rd to 8th December 2018)</a> </td>
+      </tr>
+  		<!-- <tr>
+  			<td>Special Session of SVNIT in International Conference ICCIIoT 2018 During 14th - 15th December 2018 &nbsp; &nbsp; <a href="../Data/Notice/2018/SpecialSession_BigDataForSmartCity_SVNIT.pdf"><font color="red">Call for Papers</font></a> </td>
+  		</tr> -->
+        <!--  <tr>
+                <td><a href="../Data/Notice/2018/OneWeek-STTPonInnovation&EntrepreneurshiipDevelopment.pdf">One Week -STTP on Innovation & Entrepreneurshiip Development,30th July - 3rd Aug, 2018</a></td>
+               
+              </tr>
+              <tr>
+                <td>International Conference on Advanced Engineering Optimization Through Intelligent Techniques During  3rd - 5th August, 2018 at SVNIT, Surat &nbsp; &nbsp; <a href="../Data/Notice/2018/Call_for_papersAEOTIT.pdf"><font color="red">Call for Papers</font></a></td>
+          <tr>
+                            
+            <td class="tablefont" style="text-align:left;width: 80%;"> <a href="../Data/Notice/2018/9765RATE-2018_CONFERENCE_BROCHURE-SVNIT-20-3-2018.pdf">TEQIP-III Sponsored Third National Conference on Recent Advances Traffic Engineering During 11th - 12th August, 2018 at Civil Engineering Department, SVNIT, Surat</a></td>
+            
+          </tr> -->
+</table>
+</div>
+</div>        </marquee>
+          <a href="web/notice_events_tenders.php?tag=eventsnseminar" class="right">read more...</a>
+        </div>
+      </div>
+      <div class="col l4 m4 s12  center-align">
+        <div class="card-panel  blue-grey darken-4">
+          <span class="white-text "><b><a href="web/notice_events_tenders.php?tag=tenders" class="white-text">Tenders & Enquiries</a></b></span>
+        </div>
+        <div id="nt-3-container" class="nt-container">
+          <marquee direction="up" id="marquee" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" scrolldelay="71" align="left" height="100" >
+           <div class="container" style="width: 94%";>
+ <div class="row center">
+  <table class = "bordered striped">
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/High Temperature press.pdf">Enquiry for Supply of High Temperature Hydraulic Press, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/Enquiry for Locating and Rectification of Cable faults.pdf">Enquiry for Locating and Rectification of Cable faults, SVNIT, Surat.</a> </td>
+    </tr>
+
+	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/metal powder mixer-Jan2019.pdf">Enquiry for Supply of 3D MEtal Powder Mixing Machine, SVNIT, Surat.</a> </td>
+    </tr>
+
+	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2019/corrosium museum_jan2019.pdf">Enquiry for Supply Furniture for Corrosion Mesuem, SVNIT, Surat.</a> </td>
+    </tr>
+
+
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry of 30 Tvs.pdf">Enquiry for the Purchase of 30 Branded LED TV Units (32”) at SVPB Guest House, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Corrigendum Notice for  TECHNOCOMMERCIAL _27 Dec 2018.pdf">Corrigendum for Journal Bearing Test Rig with Data Acquisition System (CIRCULAR & NONCIRCULAR PROFILES), SVNIT, Surat.</a> </td>
+    </tr>
+
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Corrigendum Notice for  TECHNOCOMMERCIAL _27 Dec 2018.pdf">Corrigendum for Slurry Jet Erosion Test Rig and its Accessories, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/35 Re-1 Inquiry.pdf">Enquiry for Supply of HP Laser Jet Printer 1020 Plus or Equivalent, SVNIT, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2018/Terms & Conditions_38.pdf"><font color="red">Terms & Conditions</font></a></td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/24 Re-3  Inquiry.pdf">Enquiry for Supply of Round R.C.C. Cover, SVNIT, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2018/Terms & Conditions_37.pdf"><font color="red">Terms & Conditions</font></a></td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/37 Inquiry.pdf">Enquiry for Supply of Godrej Cylindrical Lock, Mirror, S. S. Wire Mash, Door CLoser, SVNIT, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2018/Terms & Conditions_36.pdf"><font color="red">Terms & Conditions</font></a></td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/39E11122018.pdf">Enquiry for Door Replacement work at Raman Bhavan in SVNIT, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2018/Corrigendum39E.pdf"><font color="red">Corrigendum</font></a></td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/38E11122018.pdf">Enquiry for P.V.C. Water Tank Replacement work at New Computer, New Electrical, Applied Maths., Old Civil Engg. Department, Raman Bhavan, Tagore Bhavan, Near Boiler Lab, and C-Type Quarter at SVNIT Campus, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2018/Corrigendum37-38E.pdf "><font color="red">Corrigendum</font></a></td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/37E104122018.pdf">Enquiry for Renovation and Foundation Platform work for Dynamic Reaction Frame in Old PT Lab of Applied Mechanics Department, SVNIT Campus, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2018/Corrigendum37-38E.pdf "><font color="red">Corrigendum</font></a></td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/final enquiry for audio system.pdf">Enquiry for Supply of Audio System, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/final enquiry multifunctional printer.pdf">Enquiry for Supply of Multi - functional Printer, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/final enquiry projector.pdf">Enquiry for Supply of Projector, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry-PRinter.pdf">Enquiry for Supply of Printer, SVNIT, Surat.</a> </td>
+    </tr> 
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Tender for High Performance Liquid Chromatography System.pdf">Tender for High Performance Liquid Chromatography (HPLC) System, SVNIT, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2019/Corrgendum- High Performance  Liquid Chromatography (HPLC) System.pdf"><font color="red">Corrigendum</font></a></td>
+    </tr>  
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Tender for Combined Microwave and Ultrasound unit.pdf">Tender for Combined Microwave and Ultrasound unit, SVNIT, Surat.</a>&nbsp;&nbsp; <a href="../Data/Notice/2019/Corrigendum - Combined Microwave  and Ultrasound unit.pdf"><font color="red">Corrigendum</font></a> </td>
+    </tr>  
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Inquiry_BookShelf_APD.pdf">Enquiry for Book Shelf, SVNIT, Surat.</a> </td>
+    </tr>  	
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/DOC121418-12142018113819.pdf">Enquiry for Variable Channel Width Double Layered Mini Channel Heat Sink, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/40E118122018.pdf">Enquiry for Provide Separate Ladies Washroom in First Floor of Boiler Lab, Creating New Door Entry in EN(318) of EED, Plumbing work in New Chemical Engineering Department and Narmad Bhavan Hostel-11, SVNIT, Surat.</a>  || <a href="../Data/Notice/2019/Corrigendum40E_jan2019.pdf"><font color="red">Corrigendum </a> </td>
+    </tr>
+
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/40E218122018.pdf">Enquiry for Internal Colour and Repairing work in C-2, C-5 and C-1 of C-type Quarter, Main Gate Security Office, Door Entry of TE lab and MED at SVNIT Campus, Surat.</a>  || <a href="../Data/Notice/2019/Corrigendum40E_jan2019.pdf"><font color="red">Corrigendum </a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry for Plastic Items Narmad Bhavan.pdf">Enquiry for Purchase Plastic Items for Narmad Bhavan Guest House, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry for Requirement of Sports Items for Various Hostels.pdf">Enquiry for Requirement of Sports Items for Various Hostels, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry-Enviro.pdf">Enquiry for Supply of Laboratory Equipment, SVNIT, Surat.</a> </td>
+    </tr>
+
+  	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry for Sport items for various sports.pdf">Enquiry for Supply of Consumable Soprts Items, SVNIT, Surat.</a> </td>
+    </tr>
+
+    <tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry for Supply and installation of ceilling mounted overhead digital projector.pdf">Enquiry for Suppply and Installation of Ceiling Mounted Overhead Digital Projector with 20 Meters of Extension Cables for Gajjar Bhavan Hostel, SVNIT, Surat.</a> </td>
+    </tr>
+
+	<tr>
+           <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/Enquiry_upload_IPMSM.pdf">Enquiry for 200V, 4 Pole, 5 HP, Interior Permanent Magnet Synchronous Motor (IPMSM), SVNIT, Surat.</a></td>
+    </tr>
+
+     <tr>
+          <td class="tablefont" style="text-align:left;width: 80%;"><a href="../Data/Notice/2018/24112018_TenderforMicrowaveUV_Ultrasonicator-DST-EMR.pdf">TENDER FOR MICROWAVE-ULTRASONIC-ULTRAVIOLET SYNTHESIS/EXTRACTION REACTOR and ACCESSORIES, SVNIT, Surat.</a> | <a href="../Data/Notice/2018/07122018TenderforMicrowave_UV_Ultrasonicator-DST-EMR.pdf"><font color=red>Corrigendum</a></font></td>
+    </tr>
+   
+
+
+  	 
+
+
+</table>
+</div>
+</div>
+        </marquee>
+           <!--  <li><a class="myImp" href="Data/Notice/2018/EnquiryforSupplyofPVCWireCoilsforSVNITCampus.pdf">Enquiry for Supply of PVC Wire Coils for Estate at Section SVNIT, Surat</a> </li>
+ -->
+            <!-- 
+            <li><a class="myImp" href="Data/Notice/2018/19E13072018.pdf">Enquiry Tender for "Removing, Supplying and Refixing of Old False Ceiling in P.G. Centre in Transportation Engineering & Planning Section in SVNIT, Surat</a> </li>
+            <li><a class="myImp" href="Data/Notice/2018/EnquiryforSupplyofElectricalMaterialsatEstateSectionSVNITCampus,Surat.pdf">Enquiry for Supply of Electrical Materials at Estate Section, SVNIT Campus, SVNIT, Surat</a> </li>
+
+            <li><a class="myImp" href="Data/Notice/2018/Utencilinquiry.pdf">Enquiry for Supply of Mess Utensil Items for Bhabha Bhavan Hostel at SVNIT, Surat</a> </li>
+            <li><a class="myImp" href="Data/Notice/2018/EnquirySAE_KELLY_2.pdf">Enquiry for Supply of Kelly 7245 or Equivalent BLDC Controller and Foot Throttle at SVNIT, Surat</a> </li>
+            <li><a class="myImp" href="Data/Notice/2018/Enquiry_SAEBLDC_Motor.pdf">Enquiry for Supply of 4.5kw BLDC Motor at SVNIT, Surat</a> </li>
+          	<li><a class="myImp" href="Data/Notice/2018/EnquirySNS..pdf">Enquiry for Supply of Timing Belt based Conveyor belt Systemat Electrical Engineering Department, SVNIT, Surat</a> </li>
+          	
+            <li><a class="myImp" href="Data/Notice/2018/Enquiryforsupplyof2storyadjustablestandforprojectwork.pdf">Enquiry for supply of 2 story adjustable stand for project work in Electrical Engineering Department at SVNIT, Surat</a> </li>
+            <li><a class="myImp" href="Data/Notice/2018/EnquiryforBenches.pdf">Enquiry for Benches in Chemical Engineering Department, SVNIT, Surat</a> </li>  
+             <li><a class="myImp" href="Data/Notice/2018/EnquiryTenderforStreetlightWorkatBasketballGround,ActivityCenterandotherplacesatSVNIT,Surat_Extended.pdf">Enquiry Tender for Streetlight Work at Basketball Ground, Activity Center and other places at SVNIT, Surat</a> </li>
+            <li><a class="myImp" href="Data/Notice/2018/ENQUIRY_DELL_PC_APD.pdf">Enquiry for DELL 5050 Desktop PC (01) with monitor at Applied Physics Department, SVNIT, Surat</a> </li>
+            <li><a class="myImp" href="http://www.svnit.ac.in/web/notice_events_tenders.php?tag=tenders">Enquiry for Xerox Papers at Estate & Store Section , SVNIT Campus, Surat</a> </li>
+            <li><a class="myImp" href="http://www.svnit.ac.in/web/notice_events_tenders.php?tag=tenders">Enquiry for Batteries for D.G. Setat Estate & Store Section , SVNIT Campus, Surat</a> </li>
+            <li><a class="myImp" href="http://www.svnit.ac.in/web/notice_events_tenders.php?tag=tenders">Enquiry for Cement at Estate & Store Section , SVNIT Campus, Surat</a> </li>
+            <li><a class="myImp" href="http://www.svnit.ac.in/web/notice_events_tenders.php?tag=tenders">Enquiry for Brick at Estate & Store Section , SVNIT Campus, Surat</a> </li>
+            <li><a class="myImp" href="http://www.svnit.ac.in/web/notice_events_tenders.php?tag=tenders">Enquiry for Sand at Estate & Store Section , SVNIT Campus, Surat</a> </li>
+            <li><a class="myImp" href="http://www.svnit.ac.in/web/notice_events_tenders.php?tag=tenders">Enquiry for Plumbing Items at Estate & Store Section , SVNIT Campus, Surat</a> </li>
+            <li><a class="myImp" href="http://www.svnit.ac.in/web/notice_events_tenders.php?tag=tenders">Enquiry for Godrej Lock at Estate & Store Section , SVNIT Campus, Surat</a> </li>
+            <li><a class="myImp" href="Data/Notice/2018/sensors100Amper(ACDC)-VAS.pdf">Enquiry for supply of 4 Analog isolated Channel Memory Hicorderwith four voltage probe of 600volts(ACCD) and four current clamp on sensors 100Amper(ACDC) at Electrical Engineering Department, SVNIT, Surat </a></li>
+          	<li><a class="myImp" href="Data/Notice/2018/treadmillrepairre-inq.pdf">Enquiry for Supply and Installation of Drive Board of a Landice Treadmill, at SVNIT, Surat</a></li>
+            <li><a class="myImp" href="Data/Notice/2018/kevlarbeltre-inq.pdf">Enquiry for Supply of Weight Bearing "Kevalar Belt" With Installation into the Strength Training Fitness Equipments of a Gym, SVNIT, Surat</a></li>
+            <li><a class="myImp" href="Data/Notice/2018/Enquiry for Electric Probe Station.pdf">Enquiry for Electric Probe Station at Applied Physic Department, SVNIT, Surat</a></li>
+            <li><a class="myImp" href="Data/Notice/2018/SCANFILE_LEDEnquiry.pdf">Enquiry for supply of LED Lights for Gymnasium Room at SVNIT, Surat</a></li>
+          	<li><a class="myImp" href="Data/Notice/2018/Security Tender Final.pdf">Enquiry Tender for Security Services, SVNIT Campus, Surat</a></li>
+             -->
+          
+          <a href="web/notice_events_tenders.php?tag=tenders" class="right">read more...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- modal for cards -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection with-header">
+        <li class="collection-header text-center"><h4 class="light-green-text text-darken-3">SVNIT Events</h4></li>
+                  </ul>
+      </div>
+      <div class="modal-footer">
+        <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+      </div>
+      </div>
+
+<!-- 2nd modal -->
+  <div id="modal2" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection with-header">
+        <li class="collection-header text-center"><h4 class=" light-green-text text-darken-3">Student Chapters</h4></li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle green">android</i>
+          <div class="title"><h5 class="blue-text text-darken-2">ACM</h5></div>
+          <a href="http://nitsurat.acm.org/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle red">group_work</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">Drishti</h5></div>  
+          <a href="http://www.svnit.ac.in/stu_chap/drishti/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle yellow">settings_input_composite</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">ISF</h5></div>  
+          <a href="http://www.svnit.ac.in/stu_chap/ISF/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle  brown">invert_colors</i>
+          <div class="title" ><h5 class="blue-text text-darken-2"></h5></div>
+          <p>Chemical Department</p>
+          <a href="http://www.ches.in/" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle blue">business</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">CES</h5></div> 
+          <a href="" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle orange">track_changes</i>
+          <div class="title" ><h5 class="blue-text text-darken-2">SCOSH</h5></div>
+          <a href="http://www.svnit.ac.in/stu_chap/SCOSH/" target="_blank" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+<!-- 3rd modal-->
+  <div id="modal3" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection with-header">
+        <li class="collection-header text-center" style="background-color: rgb(56,75,123);"><h3 class=" light-green-text text-darken-3">TEQIP</h3></li>
+        <li class="collection-header text-center"><a href="web/teqip.php"><h4 class=" light-green-text text-darken-3">TEQIP 1</h4></a></li>
+        <li class="collection-header text-center"><a href="web/teqip2.php"><h4 class=" light-green-text text-darken-3">TEQIP 2</h4></a></li>  
+        <li class="collection-header text-center"><a href="web/teqip3.php"><h4 class=" light-green-text text-darken-3">TEQIP 3</h4></a></li> 
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+
+<!-- card -->
+  <div  style="margin:0px;" class="section card-panel white">
+    <div class="row center-align">
+      <div class="col s12 m4 l2">   
+        <a href="#modal1">
+          <div class="card hoverable" style="height: 190px;width: 190px;">
+            <div class="card-image crdtop">
+              <img src="images/event-fests.jpg" alt="events" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Events</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="#modal2">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/student_chapter.jpg" alt="student_chapter" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Chapters</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2" >
+        <a href="web/department/ELibrary/elibrary.php" target="_blank">
+          <div class="card hoverable " style="height: 190px;width: 190px;">
+            <div class="card-image crdtop">
+              <img src="images/library.jpg" alt="library" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">E-Library</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="web/placement.php" target="_blank">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/tnp.jpg" alt="TNP" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">TnP</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="web/qip.php">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/teqip.png" alt="TEQIP" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">QIP</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col s12 m4 l2">
+        <a href="web/achievements.php" target="_blank">
+          <div class="card hoverable" style="height: 190px;width: 190px; ">
+            <div class="card-image crdtop">
+              <img src="images/alum.jpg" alt="alumani" style="height: 100%;">
+            </div>
+            <div class="card-action black white-text crdbottom">
+              <span class="card-title ">Glory</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sardar Vallabhbhai National Institute of Technology, Surat</h5>
+          <p class="grey-text text-lighten-4">The Sardar Vallabhbhai National Institute of Technology, Surat popularly known as National Institute of Technology, Surat, NIT Surat or SVNIT, is an engineering institute of higher education established by the Parliament of India in 1961.</p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"/>
+          </a>
+          <a href="https://www.facebook.com/Mediacell_SVNIT-2056411067945837/"<i class="fa fa-facebook-official fa-2x" style="color: #3b5998 !important" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/Media_SVNIT"<i class="fa fa-twitter fa-2x" style="color: #0084b4 !important" aria-hidden="true"></i></a>
+   
+          <!-- Start of CuterCounter Code -->
+        <!--   <a href="http://www.svnit.ac.in/index.php" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=20950&nd=6&style=26" border="0" alt="web counter"></a> -->
+          
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">Information</h5>
+          <ul>
+            <li><a class="white-text" href="Data/rti.pdf">Right to Information</a></li>
+            <li><a class="white-text" href="web/about.php">About</a></li>
+            <li><a class="white-text" href="web/contactus.php">Contact Us</a></li>
+            <li><a class="white-text" href="#modal6">Helpline</a></li>
+            <li><a class="white-text" href="Data/IT_POLICY_2014.pdf">IT policy</a></li>
+            <li><a class="white-text" href="Data/Notice/2018/Disclaimer_SVNIT.pdf">Disclaimer</a></li>
+            <li><a class="white-text" href="web/sitemap.php">Site Map</a></li>
+            
+          </ul>
+        </div>
+
+        <div id="modal6" class="modal bottom-sheet">
+          <div class="modal-content">
+            <ul class="collection with-header">
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">helplinefirstyear[at]svnit[dot]ac[dot]in</h5></a></li>
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">helplinehostels[at]svnit[dot]ac[dot]in</h5></a></li>
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">helplinelady[at]svnit[dot]ac[dot]in</h5></a></li>
+              <li class="collection-header text-center"><a href="#"><h5 class=" light-blue-text text-darken-3">icc[at]svnit[dot]ac[dot]in</h5></a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+          </div>
+        </div>
+            
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://goo.gl/forms/Gb3yPxdF0aKGILbg1">Feedback</a></li>
+            <li><a class="white-text" href="web/minutes.php?tag=bog">Minutes</a></li>
+            <li><a class="white-text" href="#modal4">Donation</a></li>
+            <div id="modal4" class="modal bottom-sheet">
+              <div class="modal-content">
+                <ul class="collection with-header">
+                  <li class="collection-header text-center"><a href="Data/Terms For Setting UG Scholarhip SVNIT-jan2016.pdf"><h5 class=" light-green-text text-darken-3">TERMS FOR SETTING OF UNDERGRADUATE SCHOLARSHIP</h5></a></li>
+                  <li class="collection-header text-center"><a href="Data/Donation Form SVNIT_jan2016.pdf"><h5 class=" light-green-text text-darken-3">Donation Form</h5></a></li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+              </div>
+            </div>
+            <li><a class="white-text" href="#modal5">Other Info</a></li>
+              <div id="modal5" class="modal bottom-sheet">
+                <div class="modal-content">
+                  <ul class="collection with-header">
+                    <li class="collection-header text-center"><a href="Data/KAKODKAR_COMMITTEE_REPORT-for-NITs.pdf"><h5 class=" light-green-text text-darken-3">KAKODKAR COMMITTEE REPORT for NITs</h5></a></li>
+                    <li class="collection-header text-center"><a href="Data/Kakodkar-committee-report-on-NITs-presentation.pdf"><h5 class=" light-green-text text-darken-3">Kakodkar Committee Report on NITs Presentation</h5></a></li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                </div>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+     
+    <div class="footer-copyright">
+      <div class="container">Developed by 
+      <a class="brown-text text-lighten-3" href="web/webteam.php">Web team</a>   
+      <a class="white-text right">Best viewed in Google Chrome Version 59.0.3071.115</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.newsTicker.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/md5.js" ></script>
+    <script src="js/modernizr.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+      //alert('Before load');
+      $(".se-pre-con").fadeOut("slow");
+      });
+    
+      $(document).ready(function(){
+        $('.modal').modal();
+        $('.slider').slider();
+      });
+
+      var nt_1 = $('#nt-1').newsTicker({
+        row_height: 50,
+        speed: 600,
+        max_rows: 2,
+        duration: 3300,
+        prevButton: $('#nt-1-prev'),
+        nextButton: $('#nt-1-next')
+      });
+
+      var nt_2 = $('#nt-2').newsTicker({
+        row_height: 50,
+        speed: 600,
+        max_rows: 2,
+        duration: 3300,
+        prevButton: $('#nt-2-prev'),
+        nextButton: $('#nt-2-next')
+      });
+
+      var nt_3 = $('#nt-3').newsTicker({
+        row_height: 50,
+        speed: 600,
+        max_rows: 2,
+        duration: 3300,
+        prevButton: $('#nt-3-prev'),
+        nextButton: $('#nt-3-next')
+      });
+
+      $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+      });
+    </script>
+    <script type="text/javascript">
+      jQuery(function(){
+        jQuery('#ticker').tickerme();
+      });
+  
+  // js code for news ticker
+  (function(e){e.fn.tickerme=function(t){var n=e.extend({},e.fn.tickerme.defaults,t);return this.each(function(){function a(){e(t).hide();e("body").prepend(r).prepend(i);var n='<div id="ticker_container">';n+='<div id="newscontent"><div id="news"></div></div>';n+='<div id="controls">';n+='<a href="#" id="pause_trigger"><svg class="icon icon-pause" viewBox="0 0 32 32"><use xlink:href="#icon-pause"></use></svg></a>';n+='<a href="#" id="play_trigger" style="display:none"><svg class="icon icon-play" viewBox="0 0 32 32"><use xlink:href="#icon-play"></use></svg></a>';n+='<a href="#" id="prev_trigger"><svg class="icon icon-prev" viewBox="0 0 32 32"><use xlink:href="#icon-prev"></use></svg></a>';n+='<a href="#" id="next_trigger"><svg class="icon icon-next" viewBox="0 0 32 32"><use xlink:href="#icon-next"></use></svg></a>';n+="</div>";n+="</div>";e(n).insertAfter(t);e(t).children().each(function(t){s[t]=e(this).html()});f()}function f(){if(o==s.length-1){o=0}else{o++}if(n.type=="fade"){e("#news").fadeOut(n.fade_speed,function(){e("#newscontent").html('<div id="news">'+s[o]+"</div>");e("#news").fadeIn(n.fade_speed)})}u=setTimeout(f,n.duration)}var t=e(this);var r='<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="224" height="32" viewBox="0 0 224 32"><defs><g id="icon-play"><path class="path1" d="M6 4l20 12-20 12z"></path></g><g id="icon-pause"><path class="path1" d="M4 4h10v24h-10zM18 4h10v24h-10z"></path></g><g id="icon-prev"><path class="path1" d="M18 5v10l10-10v22l-10-10v10l-11-11z"></path></g><g id="icon-next"><path class="path1" d="M16 27v-10l-10 10v-22l10 10v-10l11 11z"></path></g></defs></svg>';var i='<style type="text/css">#ticker_container{width:100%}#newscontent{float:left}#news{display:none}#controls{float:right;height:16px}.icon{display:inline-block;width:16px;height:16px;fill:'+n.control_colour+"}.icon:hover{fill:"+n.control_rollover+"}</style>";var s=[];var o=-1;var u;a();e("a#pause_trigger").click(function(){clearTimeout(u);e(this).hide();e("#play_trigger").show();return false});e("a#play_trigger").click(function(){f();e(this).hide();e("#pause_trigger").show();return false});e("a#prev_trigger").click(function(){if(o==0){o=s.length-1}else{o--}e("#newscontent").html('<div id="news" style="display:block">'+s[o]+"</div>");if(n.auto_stop)e("a#pause_trigger").trigger("click");return false});e("a#next_trigger").click(function(){if(o==s.length-1){o=0}else{o++}e("#newscontent").html('<div id="news" style="display:block">'+s[o]+"</div>");if(n.auto_stop)e("a#pause_trigger").trigger("click");return false})})};e.fn.tickerme.defaults={fade_speed:500,duration:3e3,auto_stop:true,type:"fade",control_colour:"#333333",control_rollover:"#666666"}})(jQuery)
+    </script>
+  </body>
+</html>
